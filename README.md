@@ -34,6 +34,6 @@ openid  |string |用户唯一ID，如OpenID或UID
 unique	|int0/1 |是否是用户唯一资源：如：头像类unique传1，分享类非唯一资源传0
 
 - 成功返回
-> {"status":0,"data":"https://dragonweb.mobartsgame.com/upload/bg/20170107_bbbbb_1483785506667.jpg"}
+> {"status":0,"data":"{HOST}/upload/bg/20170107_bbbbb_1483785506667.jpg"}
 - 失败返回
 > {"status":-1,"message":"get file error"}
