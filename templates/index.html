@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UPLOAD</title>
+	<style type="text/css">
+		body { font-family: Arial; font-size: 14px; }
+		span { font-size: 12px; color: #666; }
+	</style>
+</head>
+<body>
+	<div>
+		<h1>UPLOAD</h1>
+		<form enctype="multipart/form-data" action="upload" method="post" style="line-height: 2;">
+			<table>
+				<tr>
+					<td>file:</td>
+					<td><input type="file" name="file" /></td>
+					<td>允许类型：{{ . }}</td>
+				</tr>
+				<tr>
+					<td>module:</td>
+					<td><input type="input" name="module" /></td>
+					<td>如：avatar:头像, share:分享</td>
+				</tr>
+				<tr>
+					<td>openid:</td>
+					<td><input type="input" name="openid" /></td>
+					<td>用户唯一ID，如OpenID或UID</td>
+				</tr>
+				<tr>
+					<td>unique:</td>
+					<td><input type="input" name="unique" /></td>
+					<td>如：头像类用户唯一资源，unique传1，分享类非唯一资源传0</td>
+				</tr>
+			</table>
+
+		    <input type="submit" value="UPLOAD" /> 
+	    </form>
+	</div>
+</body>
+</html>

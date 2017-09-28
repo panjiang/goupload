@@ -1,0 +1,13 @@
+{
+    "Release": 0,
+    "BindPort": 8081,
+    "UploadDir": "temp/",
+    "AllowFileType": ["image/png", "image/jpg", "image/jpeg"],
+    "MaxFileSize": 2097152,
+    "HTTPServerURL": "https://dragonweb.mobartsgame.com/upload/",
+    "FTPServer": 1,
+    "FTPServerAddr": "dragonweb.mobartsgame.com:21",
+    "FTPUploadPath": "upload/",
+    "FTPUsername": "dragon",
+    "FTPPassword": "dragon#5102"
+}
