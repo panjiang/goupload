@@ -18,3 +18,22 @@
 > ./upload
 - 指定配置文件启动
 > ./upload -conf=config.json
+
+# 接口测试
+- Release为0时开启测试模式，打开首页出现接口测试界面
+
+# 接口接入
+- 接口：/upload<br/>
+- 类型：POST enctype=“multipart/form-data”<br/>
+
+PARAM   |TYPE   |INTRO
+--------|-------|-------
+file    |file   |图片文件
+module  |string |模块名，avatar:头像, share:分享
+openid  |string |用户唯一ID，如OpenID或UID
+unique	|int0/1 |是否是用户唯一资源：如：头像类unique传1，分享类非唯一资源传0
+
+- 成功返回
+> {"status":0,"data":"https://dragonweb.mobartsgame.com/upload/bg/20170107_bbbbb_1483785506667.jpg"}
+- 失败返回
+> {"status":-1,"message":"get file error"}
